@@ -1,0 +1,125 @@
+@import "details.css";
+@import "video.css";
+@import "banner.css";
+
+/* SECTIONS */
+.section {
+	padding: 70px 20px;
+	text-align: center;
+	font-size: 20px;
+}
+.section.bg {
+	background: #def2f1;
+}
+.section h2 {
+	margin-top: 0;
+}
+.section p {
+	margin-bottom: 20px;
+}
+.section .cta {
+	margin-top: 15px;
+}
+@media (max-width: 600px) {
+	.section .cta {
+		margin-top: 30px;
+	}
+}
+
+/* WHY */
+#why {
+	position: relative;
+}
+#why .cols {
+	display: flex;
+	flex-flow: row wrap;
+}
+#why .cols div {
+	flex-basis: 33%;
+	text-align: center;
+}
+#why .cols img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 30px auto 20px;
+}
+@media (max-width: 480px) {
+	#why .cols {
+		flex-flow: column wrap;
+	}
+	#why .cols div {
+		flex: 1 auto;
+		margin-top: 30px;
+	}
+	#why .cols div:first-child {
+		margin-top: 10px;
+	}	
+}
+
+/* DEVELOP */
+#develop .cta:first-of-type {
+	margin-right: 30px;
+}
+@media (max-width: 681px) {
+	#develop .cta:first-of-type {
+		margin-right: 0;
+	}
+}
+
+/* SUBSCRIBE */
+#subscribe {
+	padding: 30px 20px;
+	text-align: center;
+	font-size: 20px;
+	background: #fdce4b;
+}
+
+#subscribe .cta {
+	margin-left: 20px;
+	margin-top: 0;
+}
+@media (max-width: 860px) {
+	#subscribe span {
+		display: block;
+		margin-bottom: 20px;
+	}
+	#subscribe .cta {
+		margin-left: 0;
+	}	
+}
+
+/* FAQs */
+#faq-content {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px 65px 20px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+#faq-content p {
+	font-size: 16px;
+}
+
+/* Arrow decoration */
+.arrow {
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	text-align: center;
+}
+.arrow img {
+	width: 103px;
+	height: 62px;
+}
+@media (max-width: 480px) {
+	.arrow img {
+		height: 45px;
+		width: 74.5px;
+	}
+}
+
